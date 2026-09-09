@@ -16,11 +16,11 @@ for(int i = 1; i <= boardSize; i++)
     {
         if ((i + j) % 2 == 0 )
         {
-            Console.Write("X ");
+            Console.Write("◻︎ ");
         }
         else
         {
-            Console.Write("0 ");
+            Console.Write("◼︎ ");
         }
     }
     Console.WriteLine();
