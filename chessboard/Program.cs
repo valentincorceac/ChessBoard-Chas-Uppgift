@@ -14,14 +14,7 @@ for(int i = 1; i <= boardSize; i++)
 {
     for(int j = 1; j <= boardSize; j++)
     {
-        if((j % 2 == 0) && (i % 2 == 0))
-        {
-            Console.Write("X ");
-        }
-        else if ((j % 2 == 0) && !(i % 2 == 0))
-        {
-            Console.Write("0 ");
-        }else if(!(j % 2 == 0) && !(i %2 == 0))
+        if ((i + j) % 2 == 0 )
         {
             Console.Write("X ");
         }
