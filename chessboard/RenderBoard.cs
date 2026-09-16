@@ -9,6 +9,7 @@ namespace Chessboard
 
         public int BoardSize {  get; set; }
 
+        //GetSize method changes the property of a RenderBoard object to a user input, it also checks if the input is valid.
         public void GetSize()
         {
             int temp;
@@ -20,6 +21,8 @@ namespace Chessboard
             BoardSize = temp;
         }
 
+
+        //method Draw takes a boardSize value and renders a check board in the console.
         public static void Draw(int boardSize)
         {
             for (int i = 1; i <= boardSize; i++)
