@@ -17,7 +17,7 @@ namespace Chessboard
             int temp;
             while (!(int.TryParse(Console.ReadLine(), out temp)) || !(temp >= 3 && temp <= 50))
             {
-                Console.WriteLine("Type a number between 3 - 50");
+                AnsiConsole.MarkupLine("[green]Type a number between 3 - 50[/]");
             }
 
             BoardSize = temp;
@@ -33,11 +33,11 @@ namespace Chessboard
                 {
                     if ((i + j) % 2 == 0)
                     {
-                        Console.Write("◻︎ ");
+                        AnsiConsole.Markup("[white on black]   [/]");
                     }
                     else
                     {
-                        Console.Write("◼︎ ");
+                        AnsiConsole.Markup("[black on white]   [/]");
                     }
                 }
                 Console.WriteLine();
