@@ -7,12 +7,26 @@ namespace Chessboard
     public class RenderBoard
     {
 
-        public static void GetSize(out int boardSize)
+        public int BoardSize {  get; set; }
+
+        //public RenderBoard(int boardSize)
+        //{
+        //    BoardSize = boardSize;
+        //}
+
+
+
+
+
+        public void GetSize()
         {
-            while (!(int.TryParse(Console.ReadLine(), out boardSize)) || !(boardSize >= 3 && boardSize <= 50))
+            int temp;
+            while (!(int.TryParse(Console.ReadLine(), out temp)) || !(temp >= 3 && temp <= 50))
             {
                 Console.WriteLine("Type a number between 3 - 50");
             }
+
+            BoardSize = temp;
         }
 
         public static void Draw(int boardSize)
