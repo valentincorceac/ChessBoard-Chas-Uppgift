@@ -8,8 +8,7 @@ namespace Chessboard
     {
 
         public int BoardSize {  get; set; }
-       
-        //GetSize method changes the property of a RenderBoard object to a user input, it also checks if the input is valid.
+
         public void GetSize()
         {
             int temp;
