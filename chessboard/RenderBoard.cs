@@ -9,15 +9,6 @@ namespace Chessboard
 
         public int BoardSize {  get; set; }
 
-        //public RenderBoard(int boardSize)
-        //{
-        //    BoardSize = boardSize;
-        //}
-
-
-
-
-
         public void GetSize()
         {
             int temp;

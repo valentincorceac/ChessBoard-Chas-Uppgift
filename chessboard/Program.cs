@@ -8,5 +8,4 @@ RenderBoard ChessBoard = new RenderBoard();
 ChessBoard.GetSize();
 
 
-
 RenderBoard.Draw(ChessBoard.BoardSize);
