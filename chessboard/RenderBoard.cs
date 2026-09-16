@@ -40,7 +40,7 @@ namespace Chessboard
                         AnsiConsole.Markup("[black on white]   [/]");
                     }
                 }
-                Console.WriteLine();
+                AnsiConsole.MarkupLine("");
 
             }
         }
