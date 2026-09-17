@@ -49,11 +49,15 @@ GetSize will ask for user input and check for valid value and that the console w
 
 Draw takes in board size as a variable and will render a chess board based on the size given.
 
+---
+
 ## Working with git
 
 We worked in a zoom call sharing the screen and taking turns programming and then commiting to main branch.
 
 We engineered a merge conflict by creating a test branch and making conflicting changes then merging the two branches together.
+
+---
 
 ## Technical choices
 
