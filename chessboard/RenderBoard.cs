@@ -15,9 +15,18 @@ namespace Chessboard
         public void GetSize()
         {
             int temp;
-            while (!(int.TryParse(Console.ReadLine(), out temp)) || !(temp >= 3 && temp <= 50))
+            while (!(int.TryParse(Console.ReadLine(), out temp)) || !(temp >= 3 && temp <= 50) || (3 * temp > Console.WindowWidth))
             {
-                AnsiConsole.MarkupLine("[green]Type a number between 3 - 50[/]");
+                if ((temp * 3 > Console.WindowWidth) && (temp >= 3 && temp <= 50))
+                {
+                    AnsiConsole.MarkupLine("[red]The board would be too large for your current console window.\n" +
+                                            "Please increase the size of your console window and try again or\n " +
+                                            $"choose a number between 3 - {Console.WindowWidth / 3}:[/]");
+                }
+                else
+                {
+                    AnsiConsole.MarkupLine("[green]Type a number between 3 - 50:[/]");
+                }
             }
 
             BoardSize = temp;
