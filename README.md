@@ -23,11 +23,20 @@ C# console Application that renders a chessboard
 ---
 
 ## Usage example
+The program lets the user input a number between 3 - 50.
+
+<img width="509" height="116" alt="Example1" src="https://github.com/user-attachments/assets/a3d79429-3528-4b64-bd05-c7eacf6b4abe" />
+
+It then renders a chessboard of the given size.
+
+<img width="482" height="295" alt="Example2" src="https://github.com/user-attachments/assets/cbe0daaf-bd6e-464a-bbc4-861ab9509a95" />
+
 ---
 
 
 ## Packages
 [SpectreConsole](https://spectreconsole.net)
+
 ---
 
 ## Code Structure
