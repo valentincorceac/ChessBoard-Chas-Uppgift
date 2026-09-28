@@ -43,11 +43,11 @@ namespace Chessboard
                 {
                     if ((i + j) % 2 == 0)
                     {
-                        AnsiConsole.Markup("[white on black]   [/]");
+                        AnsiConsole.Markup("[black on white]   [/]");
                     }
                     else
                     {
-                        AnsiConsole.Markup("[black on white]   [/]");
+                        AnsiConsole.Markup("[white on black]   [/]");
                     }
                 }
                 AnsiConsole.MarkupLine("");
