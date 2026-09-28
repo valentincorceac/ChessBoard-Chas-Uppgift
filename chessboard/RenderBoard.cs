@@ -6,12 +6,12 @@ using Spectre.Console;
 
 namespace Chessboard
 {
-    public class RenderBoard
+    public class ChessBoard
     {
 
         public int BoardSize {  get; private set; }
 
-        //GetSize method changes the property of a RenderBoard object to a user input, it also checks if the input is valid
+        //GetSize method changes the property of a ChessBoard object to a user input, it also checks if the input is valid
         //and the console window is large enough based on input.
         public void GetSize()
         {
